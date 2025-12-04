@@ -1,0 +1,231 @@
+---
+title: "Casting par Scène"
+description: "Assigner des danseurs aux scènes et gérer les distributions"
+icon: "film"
+---
+
+## Concept de Casting par Scène
+
+Dans KORE, chaque scène peut avoir son propre casting. Cela permet de :
+- Gérer les entrées et sorties de scène
+- Optimiser les changements de costume
+- Planifier les rotations de danseurs
+
+## Assigner des Danseurs à une Scène
+
+### Méthode 1 : Depuis l'Onglet Cast
+
+<Steps>
+  <Step title="Sélectionner la scène">
+    Dans l'onglet **Scènes**, cliquez sur la scène concernée
+  </Step>
+  
+  <Step title="Ouvrir le panneau de casting">
+    Le panneau latéral droit affiche le casting de la scène
+  </Step>
+  
+  <Step title="Ajouter des danseurs">
+    Cliquez sur **+ Ajouter au casting** et sélectionnez les danseurs
+  </Step>
+</Steps>
+
+### Méthode 2 : Glisser-Déposer
+
+Vous pouvez glisser un danseur depuis la liste globale vers le panneau de casting de la scène.
+
+### Méthode 3 : Import CSV
+
+Lors de l'import CSV, cochez l'option **"Assigner automatiquement aux scènes"** si votre fichier contient une colonne `scenes`.
+
+## Retirer des Danseurs d'une Scène
+
+Pour retirer un danseur du casting d'une scène :
+
+1. Sélectionnez la scène
+2. Dans le panneau de casting, cliquez sur le danseur
+3. Cliquez sur l'icône de suppression (×)
+4. Confirmez le retrait
+
+<Warning>
+  Retirer un danseur d'une scène supprimera tous ses placements sur scène pour cette scène.
+</Warning>
+
+## Casting Global vs Casting de Scène
+
+### Casting Global
+
+- **Tous les danseurs du projet**
+- Visible dans l'onglet **Cast** (sans scène sélectionnée)
+- Base de données complète du spectacle
+
+### Casting de Scène
+
+- **Danseurs assignés à une scène spécifique**
+- Visible dans le panneau latéral droit
+- Seuls ces danseurs peuvent être placés sur scène
+
+<Info>
+  Un danseur doit être assigné à une scène pour pouvoir y être placé sur la scène virtuelle.
+</Info>
+
+## Visualisation du Casting
+
+### Indicateurs Visuels
+
+Dans la liste des danseurs, vous voyez :
+- **Nombre de scènes** : Combien de scènes incluent ce danseur
+- **Icône Quick Change** : Si le danseur a des changements rapides
+- **Statut** : Présent ou absent de la scène actuelle
+
+### Panneau de Casting de Scène
+
+Le panneau latéral droit affiche :
+- Liste des danseurs assignés
+- Photos et noms
+- Alertes Quick Change
+- Bouton pour ajouter/retirer
+
+## Détection des Quick Changes
+
+### Qu'est-ce qu'un Quick Change ?
+
+KORE détecte automatiquement quand un danseur doit :
+- Sortir de scène à la fin d'une scène
+- Revenir sur scène au début de la scène suivante
+- Avec un temps de changement très court
+
+### Indicateur Quick Change
+
+Les danseurs concernés sont marqués avec :
+- Icône rouge ⏱️👕 (chronomètre + t-shirt)
+- Alerte dans le panneau de casting
+- Détails du temps disponible
+
+<Tabs>
+  <Tab title="Dans le Casting Global">
+    L'icône apparaît à côté du nom du danseur dans la liste globale
+  </Tab>
+  
+  <Tab title="Dans le Casting de Scène">
+    Une alerte détaillée indique :
+    - Entre quelles scènes
+    - Temps disponible estimé
+    - Recommandations
+  </Tab>
+  
+  <Tab title="Dans l'En-tête de Scène">
+    Un badge indique le nombre de Quick Changes pour la scène
+  </Tab>
+</Tabs>
+
+### Gérer les Quick Changes
+
+Pour résoudre un Quick Change problématique :
+
+<AccordionGroup>
+  <Accordion title="Option 1 : Ajuster le Timing" icon="clock">
+    - Augmentez la durée de la scène précédente
+    - Réduisez le délai entre les scènes
+    - Ajoutez un entracte si nécessaire
+  </Accordion>
+  
+  <Accordion title="Option 2 : Remplacer le Danseur" icon="user-group">
+    - Utilisez un doublure pour l'une des scènes
+    - Réassignez le rôle à un autre danseur
+    - Planifiez une rotation
+  </Accordion>
+  
+  <Accordion title="Option 3 : Simplifier le Costume" icon="shirt">
+    - Prévoyez un costume facile à changer
+    - Utilisez des accessoires amovibles
+    - Coordonnez avec l'équipe costumes
+  </Accordion>
+</AccordionGroup>
+
+## Copier le Casting
+
+### Dupliquer vers une Autre Scène
+
+Pour copier le casting d'une scène vers une autre :
+
+<Steps>
+  <Step title="Sélectionner la scène source">
+    Cliquez sur la scène dont vous voulez copier le casting
+  </Step>
+  
+  <Step title="Ouvrir le menu">
+    Cliquez sur le menu (⋮) dans le panneau de casting
+  </Step>
+  
+  <Step title="Copier vers">
+    Sélectionnez **"Copier le casting vers..."**
+  </Step>
+  
+  <Step title="Choisir la destination">
+    Sélectionnez la ou les scènes de destination
+  </Step>
+</Steps>
+
+<Tip>
+  Utile pour créer des variations d'une même scène ou pour des scènes avec un casting similaire.
+</Tip>
+
+## Statistiques de Casting
+
+### Vue d'Ensemble
+
+KORE fournit des statistiques utiles :
+
+| Métrique | Description |
+|----------|-------------|
+| **Danseurs par scène** | Nombre moyen de danseurs par scène |
+| **Scènes par danseur** | Nombre moyen de scènes par danseur |
+| **Quick Changes** | Nombre total de changements rapides |
+| **Taux de présence** | % de scènes où chaque danseur apparaît |
+
+### Rapport de Casting
+
+Générez un rapport détaillé :
+1. Menu projet > **Rapports**
+2. Sélectionnez **Rapport de Casting**
+3. Exportez en PDF ou CSV
+
+Le rapport inclut :
+- Liste complète des danseurs
+- Scènes assignées à chacun
+- Quick Changes détectés
+- Temps de présence total
+
+## Conseils de Gestion
+
+<AccordionGroup>
+  <Accordion title="Planification" icon="calendar">
+    - Assignez le casting dès la création des scènes
+    - Anticipez les Quick Changes
+    - Prévoyez des doublures pour les rôles clés
+  </Accordion>
+  
+  <Accordion title="Communication" icon="comments">
+    - Partagez le casting avec l'équipe
+    - Notifiez les changements rapidement
+    - Documentez les raisons des modifications
+  </Accordion>
+  
+  <Accordion title="Optimisation" icon="chart-line">
+    - Équilibrez la charge de travail
+    - Minimisez les Quick Changes
+    - Groupez les scènes par distribution similaire
+  </Accordion>
+</AccordionGroup>
+
+## Prochaines Étapes
+
+<CardGroup cols={2}>
+  <Card title="Placer sur Scène" icon="location-dot" href="/stage/placing-dancers">
+    Positionnez vos danseurs assignés
+  </Card>
+  
+  <Card title="Créer des Scènes" icon="film" href="/scenes/create-scenes">
+    Organisez votre spectacle
+  </Card>
+</CardGroup>

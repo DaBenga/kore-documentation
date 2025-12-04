@@ -1,0 +1,120 @@
+{
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "KORE Documentation",
+    "theme": "quill",
+    "colors": {
+        "primary": "#8B5CF6",
+        "light": "#A78BFA",
+        "dark": "#7C3AED",
+        "background": {
+            "light": "#FFFFFF",
+            "dark": "#0F172A"
+        }
+    },
+    "favicon": "/favicon.svg",
+    "logo": {
+        "light": "/logo/light.svg",
+        "dark": "/logo/dark.svg"
+    },
+    "topbarLinks": [
+        {
+            "name": "Connexion",
+            "url": "https://kore.app"
+        }
+    ],
+    "topbarCtaButton": {
+        "type": "link",
+        "name": "Commencer",
+        "url": "https://kore.app"
+    },
+    "anchors": [
+        {
+            "name": "Application",
+            "url": "https://kore.app",
+            "icon": "play"
+        },
+        {
+            "name": "Support",
+            "url": "mailto:support@kore.app",
+            "icon": "envelope"
+        }
+    ],
+    "navigation": [
+        {
+            "group": "Démarrage",
+            "pages": [
+                "index",
+                "getting-started/quickstart",
+                "getting-started/interface-overview"
+            ]
+        },
+        {
+            "group": "Projets",
+            "pages": [
+                "projects/create-project",
+                "projects/project-settings",
+                "projects/permissions"
+            ]
+        },
+        {
+            "group": "Danseurs",
+            "pages": [
+                "dancers/add-dancers",
+                "dancers/manage-dancers",
+                "dancers/scene-cast"
+            ]
+        },
+        {
+            "group": "Scènes",
+            "pages": [
+                "scenes/create-scenes",
+                "scenes/manage-scenes",
+                "scenes/audio"
+            ]
+        },
+        {
+            "group": "Scène (Stage)",
+            "pages": [
+                "stage/placing-dancers",
+                "stage/stage-controls",
+                "stage/markers",
+                "stage/drapery"
+            ]
+        },
+        {
+            "group": "Timeline",
+            "pages": [
+                "timeline/placement-groups",
+                "timeline/timeline-controls",
+                "timeline/editing"
+            ]
+        },
+        {
+            "group": "Fonctionnalités Avancées",
+            "pages": [
+                "advanced/history",
+                "advanced/import-export",
+                "advanced/keyboard-shortcuts"
+            ]
+        },
+        {
+            "group": "Support Mobile",
+            "pages": [
+                "mobile/overview",
+                "mobile/gestures",
+                "mobile/mobile-controls"
+            ]
+        },
+        {
+            "group": "Ressources",
+            "pages": [
+                "resources/faq",
+                "resources/troubleshooting",
+                "resources/support"
+            ]
+        }
+    ],
+    "footerSocials": {
+        "github": "https://github.com/DaBenga/show-time"
+    }
+}

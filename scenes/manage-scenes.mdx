@@ -1,0 +1,180 @@
+---
+title: "Gérer les Scènes"
+description: "Modifier, réorganiser et supprimer des scènes"
+icon: "sliders"
+---
+
+## Modifier une Scène
+
+Pour modifier les propriétés d'une scène existante :
+
+<Steps>
+  <Step title="Sélectionner">
+    Cliquez sur la scène dans la liste
+  </Step>
+  
+  <Step title="Éditer">
+    Cliquez sur l'icône d'édition (crayon) ou double-cliquez
+  </Step>
+  
+  <Step title="Modifier">
+    Changez le nom, la durée ou les paramètres
+  </Step>
+  
+  <Step title="Sauvegarder">
+    Cliquez sur **Enregistrer**
+  </Step>
+</Steps>
+
+## Réorganiser les Scènes
+
+### Glisser-Déposer
+
+La méthode la plus simple pour réorganiser :
+1. Cliquez et maintenez sur une scène
+2. Glissez vers la nouvelle position
+3. Relâchez pour placer
+
+<Tip>
+  L'ordre des scènes affecte la détection des Quick Changes. Assurez-vous que l'ordre correspond au déroulement réel du spectacle.
+</Tip>
+
+### Numérotation Automatique
+
+KORE maintient automatiquement :
+- L'ordre séquentiel des scènes
+- Les calculs de temps cumulé
+- La détection des changements rapides
+
+## Dupliquer une Scène
+
+Pour créer une copie d'une scène :
+
+<Steps>
+  <Step title="Menu contextuel">
+    Cliquez sur le menu (⋮) de la scène
+  </Step>
+  
+  <Step title="Dupliquer">
+    Sélectionnez **Dupliquer**
+  </Step>
+  
+  <Step title="Options">
+    Choisissez ce qui doit être copié :
+    - ✅ Casting
+    - ✅ Placements sur scène
+    - ✅ Groupes de placement
+    - ✅ Paramètres
+  </Step>
+  
+  <Step title="Nommer">
+    Donnez un nom à la copie (ex: "Acte 1 - Variante")
+  </Step>
+</Steps>
+
+<Info>
+  La duplication est utile pour créer des variations ou tester différentes formations.
+</Info>
+
+## Supprimer une Scène
+
+<Warning>
+  La suppression d'une scène est irréversible et supprimera tous les placements et groupes associés.
+</Warning>
+
+Pour supprimer une scène :
+
+1. Cliquez sur le menu (⋮) de la scène
+2. Sélectionnez **Supprimer**
+3. Confirmez en tapant le nom de la scène
+4. Cliquez sur **Supprimer définitivement**
+
+### Impact de la Suppression
+
+- ✅ La scène est retirée du projet
+- ✅ Tous les placements sont supprimés
+- ✅ Tous les groupes de placement sont supprimés
+- ✅ Le casting de scène est effacé
+- ✅ L'audio associé est dissocié (mais pas supprimé du stockage)
+
+## Propriétés Avancées
+
+### Marqueurs de Scène
+
+Ajoutez des marqueurs temporels pour repérer des moments clés :
+
+<Steps>
+  <Step title="Activer la timeline">
+    Passez en vue Timeline pour la scène
+  </Step>
+  
+  <Step title="Ajouter un marqueur">
+    Cliquez sur **+ Marqueur** à la position souhaitée
+  </Step>
+  
+  <Step title="Nommer">
+    Donnez un nom au marqueur (ex: "Climax", "Changement de formation")
+  </Step>
+  
+  <Step title="Personnaliser">
+    Choisissez une couleur pour le marqueur
+  </Step>
+</Steps>
+
+### Alerte Quick Change
+
+Activez manuellement une alerte pour une scène problématique :
+- Cochez **"Alerte Quick Change"** dans les propriétés
+- La scène sera marquée visuellement
+- Utile pour signaler à l'équipe
+
+## Statistiques de Scène
+
+Pour chaque scène, consultez :
+
+| Statistique | Description |
+|-------------|-------------|
+| **Nombre de danseurs** | Casting total de la scène |
+| **Nombre de placements** | Positions définies |
+| **Nombre de groupes** | Groupes de placement créés |
+| **Durée totale** | Temps de la scène |
+| **Quick Changes** | Nombre détecté |
+
+## Exporter une Scène
+
+Pour partager ou archiver une scène :
+
+1. Menu (⋮) > **Exporter**
+2. Choisissez le format :
+   - **PDF** : Vue de la scène avec placements
+   - **Image** : Capture d'écran de la scène
+   - **JSON** : Données brutes pour import
+
+<Tip>
+  L'export PDF est idéal pour distribuer aux danseurs ou à l'équipe technique.
+</Tip>
+
+## Conseils de Gestion
+
+<AccordionGroup>
+  <Accordion title="Organisation" icon="folder-tree">
+    - Maintenez l'ordre chronologique
+    - Utilisez des noms descriptifs
+    - Groupez les scènes similaires
+    - Documentez les variantes
+  </Accordion>
+  
+  <Accordion title="Modifications" icon="pen">
+    - Testez les changements avant validation
+    - Communiquez les modifications à l'équipe
+    - Conservez des versions via duplication
+    - Utilisez l'historique pour annuler
+  </Accordion>
+  
+  <Accordion title="Performance" icon="gauge">
+    - Limitez le nombre de scènes très longues
+    - Divisez les actes en tableaux si nécessaire
+    - Optimisez les fichiers audio
+    - Nettoyez les scènes inutilisées
+  </Accordion>
+</AccordionGroup>

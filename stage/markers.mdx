@@ -1,0 +1,205 @@
+---
+title: "Marqueurs de Scène"
+description: "Ajouter des repères visuels sur la scène"
+icon: "location-pin"
+---
+
+## Qu'est-ce qu'un Marqueur ?
+
+Les marqueurs sont des repères visuels placés sur la scène pour :
+- Indiquer des positions clés
+- Marquer des zones spécifiques
+- Créer des références pour les danseurs
+- Documenter la mise en scène
+
+## Créer un Marqueur
+
+<Steps>
+  <Step title="Activer l'onglet Markers">
+    Cliquez sur **Markers** dans la barre latérale
+  </Step>
+  
+  <Step title="Sélectionner un groupe">
+    Choisissez ou créez un groupe de marqueurs
+  </Step>
+  
+  <Step title="Placer le marqueur">
+    Cliquez sur la scène à l'emplacement souhaité
+  </Step>
+  
+  <Step title="Nommer (optionnel)">
+    Donnez un nom au marqueur pour l'identifier
+  </Step>
+</Steps>
+
+## Groupes de Marqueurs
+
+### Créer un Groupe
+
+Les marqueurs sont organisés en groupes :
+
+1. Cliquez sur **+ Nouveau Groupe**
+2. Donnez un nom (ex: "Positions Solistes", "Repères Techniques")
+3. Choisissez une couleur
+4. Sélectionnez une forme
+
+### Propriétés des Groupes
+
+| Propriété | Options |
+|-----------|---------|
+| **Nom** | Texte libre |
+| **Couleur** | Palette de couleurs |
+| **Forme** | Croix, Cercle, Carré, Carré plein |
+| **Visibilité** | Afficher/Masquer |
+| **Verrouillage** | Empêcher les modifications |
+
+## Formes de Marqueurs
+
+<Tabs>
+  <Tab title="Croix (×)">
+    - Repère précis
+    - Peu encombrant
+    - Idéal pour les positions exactes
+  </Tab>
+  
+  <Tab title="Cercle (○)">
+    - Zone circulaire
+    - Visible de loin
+    - Pour les zones approximatives
+  </Tab>
+  
+  <Tab title="Carré (□)">
+    - Zone rectangulaire
+    - Alignement sur la grille
+    - Pour les formations géométriques
+  </Tab>
+  
+  <Tab title="Carré Plein (■)">
+    - Très visible
+    - Marque une zone importante
+    - Pour les points de focus
+  </Tab>
+</Tabs>
+
+## Gérer les Marqueurs
+
+### Déplacer un Marqueur
+
+- **Glisser-déposer** : Cliquez et déplacez
+- **Touches fléchées** : Déplacement précis
+- **Snap to grid** : S'accroche à la grille si activé
+
+### Modifier un Marqueur
+
+1. Cliquez sur le marqueur
+2. Modifiez le nom ou les propriétés
+3. Ou changez de groupe
+
+### Supprimer un Marqueur
+
+- **Sélectionner** + `Suppr`
+- Ou clic droit > **Supprimer**
+
+## Sélection Multiple
+
+### Sélectionner Plusieurs Marqueurs
+
+- **Rectangle de sélection** : Glissez pour sélectionner
+- **Ctrl/Cmd + Clic** : Ajouter à la sélection
+- **Shift + Clic** : Sélectionner une plage
+
+### Actions en Masse
+
+Avec plusieurs marqueurs sélectionnés :
+- Déplacer ensemble
+- Changer de groupe
+- Supprimer
+- Aligner
+
+## Visibilité et Verrouillage
+
+### Afficher/Masquer un Groupe
+
+Dans l'onglet Markers :
+- **Icône œil** : Toggle la visibilité
+- Utile pour simplifier la vue
+- Les marqueurs masqués restent en mémoire
+
+### Verrouiller un Groupe
+
+- **Icône cadenas** : Empêche les modifications
+- Les marqueurs ne peuvent plus être déplacés ou supprimés
+- Protège les repères importants
+
+<Tip>
+  Verrouillez les groupes de marqueurs techniques pour éviter les modifications accidentelles.
+</Tip>
+
+## Cas d'Usage
+
+<AccordionGroup>
+  <Accordion title="Positions Solistes" icon="star">
+    - Marquez les positions des solistes
+    - Utilisez une couleur distinctive
+    - Nommez chaque position
+  </Accordion>
+  
+  <Accordion title="Repères Techniques" icon="wrench">
+    - Positions des éclairages
+    - Emplacements des accessoires
+    - Zones de sécurité
+  </Accordion>
+  
+  <Accordion title="Formations Géométriques" icon="shapes">
+    - Points d'une formation en V
+    - Cercle ou ligne
+    - Symétries
+  </Accordion>
+  
+  <Accordion title="Zones Interdites" icon="triangle-exclamation">
+    - Zones à éviter (trappes, décors)
+    - Limites de sécurité
+    - Couleur rouge recommandée
+  </Accordion>
+</AccordionGroup>
+
+## Couleurs Recommandées
+
+| Usage | Couleur | Raison |
+|-------|---------|--------|
+| **Positions principales** | Bleu | Neutre et visible |
+| **Repères techniques** | Gris | Discret |
+| **Zones importantes** | Jaune | Attire l'attention |
+| **Zones interdites** | Rouge | Alerte |
+| **Positions secondaires** | Vert | Complémentaire |
+
+## Exporter les Marqueurs
+
+Pour partager ou documenter :
+1. Menu groupe > **Exporter**
+2. Choisissez le format :
+   - **Image** : Capture de la scène avec marqueurs
+   - **CSV** : Liste des positions
+   - **JSON** : Données brutes
+
+## Conseils
+
+<AccordionGroup>
+  <Accordion title="Organisation" icon="folder-tree">
+    - Créez un groupe par type de marqueur
+    - Utilisez des noms descriptifs
+    - Limitez le nombre de groupes actifs
+  </Accordion>
+  
+  <Accordion title="Visibilité" icon="eye">
+    - Masquez les groupes non utilisés
+    - Activez uniquement ce dont vous avez besoin
+    - Utilisez des couleurs contrastées
+  </Accordion>
+  
+  <Accordion title="Maintenance" icon="broom">
+    - Supprimez les marqueurs obsolètes
+    - Mettez à jour les positions si la scène change
+    - Documentez l'usage de chaque groupe
+  </Accordion>
+</AccordionGroup>

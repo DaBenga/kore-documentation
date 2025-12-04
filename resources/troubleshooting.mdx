@@ -1,0 +1,241 @@
+---
+title: "Dépannage"
+description: "Résoudre les problèmes courants"
+icon: "wrench"
+---
+
+## Problèmes de Connexion
+
+<AccordionGroup>
+  <Accordion title="Je ne peux pas me connecter" icon="circle-xmark">
+    **Solutions** :
+    1. Vérifiez votre email et mot de passe
+    2. Essayez de réinitialiser votre mot de passe
+    3. Videz le cache de votre navigateur
+    4. Essayez un autre navigateur
+    5. Vérifiez votre connexion internet
+  </Accordion>
+  
+  <Accordion title="Je ne reçois pas l'email de confirmation" icon="envelope">
+    **Solutions** :
+    1. Vérifiez votre dossier spam/courrier indésirable
+    2. Ajoutez noreply@kore.app à vos contacts
+    3. Demandez un nouvel email de confirmation
+    4. Vérifiez que l'adresse email est correcte
+    5. Contactez le support si le problème persiste
+  </Accordion>
+</AccordionGroup>
+
+## Problèmes de Performance
+
+<AccordionGroup>
+  <Accordion title="L'application est lente" icon="hourglass">
+    **Causes possibles** :
+    - Connexion internet lente
+    - Navigateur obsolète
+    - Trop d'onglets ouverts
+    - Fichiers audio trop lourds
+    
+    **Solutions** :
+    1. Vérifiez votre connexion internet
+    2. Mettez à jour votre navigateur
+    3. Fermez les onglets inutiles
+    4. Compressez vos fichiers audio
+    5. Videz le cache du navigateur
+  </Accordion>
+  
+  <Accordion title="La scène ne s'affiche pas correctement" icon="image">
+    **Solutions** :
+    1. Rafraîchissez la page (F5)
+    2. Videz le cache (Ctrl+Shift+R)
+    3. Vérifiez les dimensions du projet
+    4. Essayez un autre navigateur
+    5. Désactivez les extensions de navigateur
+  </Accordion>
+  
+  <Accordion title="L'audio ne se charge pas" icon="volume-xmark">
+    **Solutions** :
+    1. Vérifiez le format du fichier (MP3, WAV, M4A)
+    2. Vérifiez la taille (< 50 MB)
+    3. Essayez de réuploader le fichier
+    4. Convertissez en MP3 si autre format
+    5. Vérifiez que l'URL est accessible (si URL externe)
+  </Accordion>
+</AccordionGroup>
+
+## Problèmes de Sauvegarde
+
+<AccordionGroup>
+  <Accordion title="Mes modifications ne sont pas sauvegardées" icon="floppy-disk">
+    **Vérifications** :
+    1. Regardez l'indicateur de sauvegarde (en haut à droite)
+    2. Vérifiez votre connexion internet
+    3. Attendez quelques secondes (sauvegarde automatique)
+    
+    **Si le problème persiste** :
+    1. Rafraîchissez la page
+    2. Vérifiez que vous êtes toujours connecté
+    3. Exportez votre projet en JSON (sauvegarde manuelle)
+    4. Contactez le support
+  </Accordion>
+  
+  <Accordion title="J'ai perdu mes modifications" icon="triangle-exclamation">
+    **Solutions** :
+    1. Vérifiez l'historique (Ctrl+H)
+    2. Utilisez Annuler (Ctrl+Z) pour revenir en arrière
+    3. Vérifiez si un collaborateur a modifié
+    4. Contactez le support pour restauration
+  </Accordion>
+</AccordionGroup>
+
+## Problèmes d'Affichage
+
+<AccordionGroup>
+  <Accordion title="Les danseurs n'apparaissent pas" icon="user-slash">
+    **Vérifications** :
+    1. Les danseurs sont-ils assignés à la scène ?
+    2. L'affichage des danseurs est-il activé ?
+    3. Êtes-vous dans le bon groupe de placement ?
+    
+    **Solutions** :
+    1. Assignez les danseurs à la scène
+    2. Toggle l'affichage (bouton œil ou touche D)
+    3. Naviguez vers un groupe de placement
+    4. Rafraîchissez la page
+  </Accordion>
+  
+  <Accordion title="La grille ne s'affiche pas" icon="grid">
+    **Solutions** :
+    1. Activez la grille (bouton ou touche G)
+    2. Vérifiez les paramètres d'affichage
+    3. Ajustez le zoom (la grille peut être invisible si trop zoomé)
+    4. Rafraîchissez la page
+  </Accordion>
+  
+  <Accordion title="Les photos des danseurs ne chargent pas" icon="image-slash">
+    **Causes** :
+    - URL invalide ou inaccessible
+    - Problème de CORS (Cross-Origin)
+    - Format d'image non supporté
+    
+    **Solutions** :
+    1. Vérifiez que l'URL est accessible publiquement
+    2. Utilisez HTTPS (pas HTTP)
+    3. Téléchargez l'image directement au lieu d'une URL
+    4. Utilisez un service d'hébergement compatible (Imgur, etc.)
+  </Accordion>
+</AccordionGroup>
+
+## Problèmes Mobile
+
+<AccordionGroup>
+  <Accordion title="Les gestes tactiles ne fonctionnent pas" icon="hand">
+    **Solutions** :
+    1. Assurez-vous d'utiliser les bons gestes
+    2. Vérifiez la sensibilité tactile dans les paramètres
+    3. Nettoyez l'écran de votre appareil
+    4. Redémarrez l'application
+    5. Mettez à jour votre navigateur
+  </Accordion>
+  
+  <Accordion title="L'application est trop lente sur mobile" icon="mobile">
+    **Solutions** :
+    1. Fermez les autres applications
+    2. Réduisez la qualité de rendu (paramètres)
+    3. Désactivez les animations (paramètres)
+    4. Utilisez le Wi-Fi au lieu de la 4G
+    5. Redémarrez votre appareil
+  </Accordion>
+</AccordionGroup>
+
+## Problèmes d'Import/Export
+
+<AccordionGroup>
+  <Accordion title="L'import CSV échoue" icon="file-csv">
+    **Vérifications** :
+    1. Format du fichier : CSV avec virgules
+    2. Encodage : UTF-8
+    3. Colonnes requises : `prenom`, `nom`
+    
+    **Solutions** :
+    1. Vérifiez le format du CSV
+    2. Supprimez les caractères spéciaux
+    3. Essayez avec un fichier plus petit d'abord
+    4. Consultez le [guide d'import](/dancers/add-dancers)
+  </Accordion>
+  
+  <Accordion title="L'export ne fonctionne pas" icon="file-export">
+    **Solutions** :
+    1. Vérifiez que le projet n'est pas vide
+    2. Essayez un autre format (JSON au lieu de ZIP)
+    3. Désactivez les bloqueurs de popup
+    4. Essayez un autre navigateur
+    5. Contactez le support
+  </Accordion>
+</AccordionGroup>
+
+## Messages d'Erreur
+
+<AccordionGroup>
+  <Accordion title="Erreur 403 : Accès refusé" icon="ban">
+    **Cause** : Vous n'avez pas les permissions nécessaires
+    
+    **Solutions** :
+    1. Vérifiez que vous êtes connecté
+    2. Demandez les permissions au propriétaire du projet
+    3. Vérifiez votre rôle (Lecteur/Éditeur/Admin)
+  </Accordion>
+  
+  <Accordion title="Erreur 404 : Projet non trouvé" icon="magnifying-glass">
+    **Causes possibles** :
+    - Le projet a été supprimé
+    - Vous n'avez plus accès
+    - URL incorrecte
+    
+    **Solutions** :
+    1. Vérifiez l'URL
+    2. Retournez à la liste des projets
+    3. Contactez le propriétaire du projet
+  </Accordion>
+  
+  <Accordion title="Erreur 500 : Erreur serveur" icon="server">
+    **Cause** : Problème temporaire du serveur
+    
+    **Solutions** :
+    1. Attendez quelques minutes
+    2. Rafraîchissez la page
+    3. Vérifiez le [statut du service](https://status.kore.app)
+    4. Contactez le support si le problème persiste
+  </Accordion>
+</AccordionGroup>
+
+## Réinitialisation et Nettoyage
+
+### Vider le Cache du Navigateur
+
+<Tabs>
+  <Tab title="Chrome">
+    1. `Ctrl+Shift+Suppr` (Windows) ou `Cmd+Shift+Suppr` (Mac)
+    2. Sélectionnez "Images et fichiers en cache"
+    3. Cliquez sur "Effacer les données"
+  </Tab>
+  
+  <Tab title="Safari">
+    1. Menu Safari > Préférences
+    2. Onglet Avancées
+    3. Cochez "Afficher le menu Développement"
+    4. Menu Développement > Vider les caches
+  </Tab>
+  
+  <Tab title="Firefox">
+    1. `Ctrl+Shift+Suppr` (Windows) ou `Cmd+Shift+Suppr` (Mac)
+    2. Sélectionnez "Cache"
+    3. Cliquez sur "Effacer maintenant"
+  </Tab>
+</Tabs>
+
+## Toujours Bloqué ?
+
+<Card title="Contactez le Support" icon="life-ring" href="/resources/support">
+  Si aucune de ces solutions ne fonctionne, notre équipe d'assistance est là pour vous aider.
+</Card>

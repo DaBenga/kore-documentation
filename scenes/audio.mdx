@@ -1,0 +1,229 @@
+---
+title: "Audio et Musique"
+description: "Synchroniser vos scènes avec la musique"
+icon: "music"
+---
+
+## Ajouter un Fichier Audio
+
+Pour associer de la musique à une scène :
+
+<Steps>
+  <Step title="Sélectionner la scène">
+    Cliquez sur la scène dans la liste
+  </Step>
+  
+  <Step title="Ajouter l'audio">
+    Cliquez sur **+ Ajouter Audio** dans les propriétés
+  </Step>
+  
+  <Step title="Choisir le fichier">
+    Sélectionnez un fichier depuis votre ordinateur
+  </Step>
+  
+  <Step title="Upload">
+    Le fichier est téléchargé et traité automatiquement
+  </Step>
+</Steps>
+
+## Formats Supportés
+
+KORE accepte les formats audio suivants :
+
+| Format | Extension | Recommandé |
+|--------|-----------|------------|
+| **MP3** | `.mp3` | ✅ Oui |
+| **WAV** | `.wav` | ✅ Oui |
+| **M4A** | `.m4a` | ✅ Oui |
+| **OGG** | `.ogg` | ⚠️ Limité |
+| **FLAC** | `.flac` | ❌ Non supporté |
+
+<Tip>
+  Pour de meilleures performances, utilisez des fichiers MP3 avec un bitrate de 192-320 kbps.
+</Tip>
+
+## Visualisation Audio
+
+### Waveform (Forme d'Onde)
+
+Une fois l'audio ajouté, la timeline affiche :
+- **Waveform** : Représentation visuelle de l'audio
+- **Amplitude** : Intensité sonore
+- **Durée** : Longueur exacte du fichier
+
+<Info>
+  La waveform aide à synchroniser visuellement les placements avec la musique.
+</Info>
+
+### Zoom sur la Waveform
+
+Contrôles disponibles :
+- **Zoom horizontal** : Molette souris ou pincement
+- **Ajuster à la vue** : Bouton "Fit"
+- **Zoom sur sélection** : Double-clic sur une zone
+
+## Lecture et Contrôles
+
+### Contrôles de Lecture
+
+| Contrôle | Action | Raccourci |
+|----------|--------|-----------|
+| **Play/Pause** | Lire ou mettre en pause | `Espace` |
+| **Stop** | Arrêter et revenir au début | `S` |
+| **Avance rapide** | Avancer de 5 secondes | `→` |
+| **Recul rapide** | Reculer de 5 secondes | `←` |
+
+### Playhead (Tête de Lecture)
+
+- **Position actuelle** : Ligne verticale rouge
+- **Déplaçable** : Cliquez pour positionner
+- **Suit la lecture** : Se déplace automatiquement
+- **Synchronisé** : Avec les placements sur scène
+
+<Tip>
+  Utilisez le playhead pour naviguer précisément dans la musique et créer vos placements au bon moment.
+</Tip>
+
+## Synchronisation avec la Chorégraphie
+
+### Créer des Groupes de Placement Synchronisés
+
+<Steps>
+  <Step title="Positionner le playhead">
+    Cliquez sur la timeline au moment souhaité
+  </Step>
+  
+  <Step title="Placer les danseurs">
+    Positionnez vos danseurs sur la scène
+  </Step>
+  
+  <Step title="Créer le groupe">
+    Cliquez sur **+ Nouveau Groupe** dans la timeline
+  </Step>
+  
+  <Step title="Définir la durée">
+    Le groupe commence au playhead et dure jusqu'au prochain groupe
+  </Step>
+</Steps>
+
+### Marqueurs Musicaux
+
+Ajoutez des marqueurs pour repérer les moments clés :
+- **Intro** : Début de la musique
+- **Couplet** : Sections principales
+- **Refrain** : Parties répétées
+- **Bridge** : Transitions
+- **Outro** : Fin
+
+<AccordionGroup>
+  <Accordion title="Ajouter un marqueur" icon="bookmark">
+    1. Positionnez le playhead
+    2. Cliquez sur **+ Marqueur**
+    3. Nommez le marqueur
+    4. Choisissez une couleur
+  </Accordion>
+  
+  <Accordion title="Éditer un marqueur" icon="pen">
+    1. Cliquez sur le marqueur
+    2. Modifiez le nom ou la couleur
+    3. Ou déplacez-le par glisser-déposer
+  </Accordion>
+  
+  <Accordion title="Supprimer un marqueur" icon="trash">
+    1. Cliquez sur le marqueur
+    2. Appuyez sur `Suppr` ou cliquez sur l'icône de suppression
+  </Accordion>
+</AccordionGroup>
+
+## Modifier l'Audio
+
+### Remplacer le Fichier
+
+Pour changer la musique d'une scène :
+
+1. Cliquez sur le menu audio (⋮)
+2. Sélectionnez **Remplacer**
+3. Choisissez le nouveau fichier
+4. Confirmez le remplacement
+
+<Warning>
+  Remplacer l'audio peut désynchroniser vos placements existants si la nouvelle musique a une durée différente.
+</Warning>
+
+### Supprimer l'Audio
+
+Pour retirer la musique :
+
+1. Menu audio (⋮) > **Supprimer**
+2. Confirmez la suppression
+3. La scène revient en mode manuel (sans audio)
+
+<Info>
+  Supprimer l'audio ne supprime pas les groupes de placement, mais ils ne seront plus synchronisés avec la musique.
+</Info>
+
+## Paramètres Audio
+
+### Volume
+
+Ajustez le volume de lecture :
+- **Curseur de volume** : 0% à 100%
+- **Mute** : Couper le son temporairement
+- **Raccourci** : `M` pour mute/unmute
+
+### Vitesse de Lecture
+
+Modifiez la vitesse pour l'analyse :
+- **0.5x** : Ralenti (pour détails)
+- **1.0x** : Vitesse normale
+- **1.5x** : Accéléré (pour aperçu)
+- **2.0x** : Très rapide
+
+<Tip>
+  La vitesse ralentie est utile pour placer précisément les danseurs sur des passages complexes.
+</Tip>
+
+## Optimisation des Fichiers
+
+### Taille de Fichier
+
+Pour de meilleures performances :
+
+| Durée | Taille recommandée |
+|-------|-------------------|
+| < 3 min | < 5 MB |
+| 3-5 min | < 8 MB |
+| 5-10 min | < 15 MB |
+| > 10 min | Divisez en plusieurs scènes |
+
+### Compression
+
+Si votre fichier est trop lourd :
+1. Utilisez un outil de compression (Audacity, ffmpeg)
+2. Réduisez le bitrate à 192 kbps
+3. Convertissez en MP3 si nécessaire
+
+## Conseils
+
+<AccordionGroup>
+  <Accordion title="Préparation" icon="scissors">
+    - Éditez vos fichiers audio avant import
+    - Coupez les silences inutiles
+    - Normalisez le volume
+    - Ajoutez des fade-in/fade-out
+  </Accordion>
+  
+  <Accordion title="Organisation" icon="folder">
+    - Nommez clairement vos fichiers
+    - Gardez une copie de sauvegarde
+    - Documentez les versions
+    - Synchronisez avec l'équipe son
+  </Accordion>
+  
+  <Accordion title="Performance" icon="bolt">
+    - Utilisez MP3 pour la compatibilité
+    - Limitez la taille des fichiers
+    - Évitez les formats non compressés
+    - Testez la lecture avant le spectacle
+  </Accordion>
+</AccordionGroup>

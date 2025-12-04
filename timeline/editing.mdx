@@ -1,0 +1,132 @@
+---
+title: "Édition de la Timeline"
+description: "Techniques avancées d'édition et d'organisation"
+icon: "pen"
+---
+
+## Édition de Groupes
+
+### Modifier en Place
+
+Pour éditer un groupe existant :
+1. Naviguez vers le groupe
+2. Modifiez les positions des danseurs
+3. Les changements sont automatiquement sauvegardés
+
+### Édition Non-Destructive
+
+KORE utilise un système d'historique :
+- Chaque modification est enregistrée
+- Annuler/Refaire disponibles
+- Retour à des versions antérieures possible
+
+## Copier-Coller
+
+### Copier un Groupe
+
+<Steps>
+  <Step title="Sélectionner">
+    Cliquez sur le groupe à copier
+  </Step>
+  
+  <Step title="Copier">
+    `Ctrl/Cmd + C` ou menu > **Copier**
+  </Step>
+  
+  <Step title="Positionner le playhead">
+    Au moment où coller
+  </Step>
+  
+  <Step title="Coller">
+    `Ctrl/Cmd + V` ou menu > **Coller**
+  </Step>
+</Steps>
+
+### Copier entre Scènes
+
+Vous pouvez copier des groupes d'une scène à l'autre :
+1. Copiez le groupe dans la scène source
+2. Changez de scène
+3. Collez dans la scène de destination
+
+<Info>
+  Seuls les danseurs présents dans les deux scènes seront collés.
+</Info>
+
+## Fusion de Groupes
+
+### Fusionner Deux Groupes
+
+Pour combiner deux groupes adjacents :
+1. Sélectionnez les deux groupes (`Ctrl/Cmd + Clic`)
+2. Menu > **Fusionner**
+3. Les deux groupes deviennent un seul
+
+<Warning>
+  La fusion est irréversible (sauf via Annuler). Les positions intermédiaires sont perdues.
+</Warning>
+
+## Division de Groupes
+
+### Diviser un Groupe
+
+Pour créer deux groupes à partir d'un :
+1. Positionnez le playhead au point de division
+2. Sélectionnez le groupe
+3. Menu > **Diviser** ou `Ctrl/Cmd + Shift + D`
+
+Le groupe est divisé en deux parties égales.
+
+## Alignement Temporel
+
+### Aligner sur la Grille Temporelle
+
+Activez le snap temporel :
+- Les groupes s'alignent sur les secondes
+- Ou sur les temps musicaux (si audio)
+- Ajustable en précision
+
+### Aligner sur les Marqueurs
+
+Les groupes peuvent s'accrocher aux marqueurs :
+- Facilite la synchronisation
+- Maintient l'alignement musical
+- Évite les décalages
+
+## Raccourcis d'Édition
+
+| Raccourci | Action |
+|-----------|--------|
+| `Ctrl/Cmd + N` | Nouveau groupe |
+| `Ctrl/Cmd + D` | Dupliquer |
+| `Ctrl/Cmd + C` | Copier |
+| `Ctrl/Cmd + V` | Coller |
+| `Suppr` | Supprimer |
+| `Ctrl/Cmd + Z` | Annuler |
+| `Ctrl/Cmd + Y` | Refaire |
+| `Ctrl/Cmd + Shift + D` | Diviser |
+
+## Conseils d'Édition
+
+<AccordionGroup>
+  <Accordion title="Organisation" icon="folder-tree">
+    - Créez d'abord la structure globale
+    - Affinez ensuite les détails
+    - Utilisez des noms descriptifs
+    - Documentez les intentions
+  </Accordion>
+  
+  <Accordion title="Efficacité" icon="bolt">
+    - Utilisez les raccourcis clavier
+    - Dupliquez plutôt que recréer
+    - Copiez-collez les formations similaires
+    - Travaillez par blocs
+  </Accordion>
+  
+  <Accordion title="Qualité" icon="star">
+    - Testez les transitions
+    - Vérifiez la synchronisation audio
+    - Validez avec l'équipe
+    - Itérez et améliorez
+  </Accordion>
+</AccordionGroup>

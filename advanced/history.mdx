@@ -1,0 +1,103 @@
+---
+title: "Historique et Annulation"
+description: "Gérer l'historique des modifications"
+icon: "clock-rotate-left"
+---
+
+## Système d'Historique
+
+KORE enregistre automatiquement toutes vos modifications :
+- Placements de danseurs
+- Création/suppression de groupes
+- Modifications de scènes
+- Changements de configuration
+
+## Annuler et Refaire
+
+### Commandes de Base
+
+| Action | Raccourci | Bouton |
+|--------|-----------|--------|
+| **Annuler** | `Ctrl/Cmd + Z` | ↶ |
+| **Refaire** | `Ctrl/Cmd + Y` ou `Ctrl/Cmd + Shift + Z` | ↷ |
+
+### Profondeur de l'Historique
+
+- **Par défaut** : 50 actions
+- **Configurable** : Jusqu'à 100 actions
+- **Par projet** : Historique indépendant
+
+<Tip>
+  L'historique est conservé pendant votre session. Fermez et rouvrez le projet pour le réinitialiser.
+</Tip>
+
+## Visualiser l'Historique
+
+### Panneau d'Historique
+
+Accédez à l'historique complet :
+1. Cliquez sur l'icône d'historique
+2. Voyez toutes les actions récentes
+3. Cliquez sur une action pour y revenir
+
+### Informations Affichées
+
+Pour chaque action :
+- **Type** : Placement, groupe, scène, etc.
+- **Moment** : Horodatage
+- **Auteur** : Qui a fait la modification (si collaboratif)
+- **Détails** : Description de l'action
+
+## Restaurer une Version
+
+### Revenir à un Point Précis
+
+<Steps>
+  <Step title="Ouvrir l'historique">
+    Panneau d'historique ou `Ctrl/Cmd + H`
+  </Step>
+  
+  <Step title="Sélectionner l'action">
+    Cliquez sur le point de restauration souhaité
+  </Step>
+  
+  <Step title="Confirmer">
+    Validez la restauration
+  </Step>
+</Steps>
+
+<Warning>
+  Restaurer une version annulera toutes les modifications ultérieures.
+</Warning>
+
+## Sauvegardes Automatiques
+
+### Fréquence
+
+KORE sauvegarde automatiquement :
+- **Toutes les 30 secondes** : Si modifications
+- **À chaque action majeure** : Création de groupe, etc.
+- **Avant fermeture** : Sauvegarde finale
+
+### Indicateur de Sauvegarde
+
+Un indicateur montre l'état :
+- ✅ **Sauvegardé** : Toutes les modifications sont enregistrées
+- 🔄 **En cours** : Sauvegarde en cours
+- ⚠️ **Non sauvegardé** : Modifications en attente
+
+## Conseils
+
+<AccordionGroup>
+  <Accordion title="Utilisation Efficace" icon="lightbulb">
+    - Annulez sans hésiter pour tester
+    - Utilisez l'historique pour comparer
+    - Sauvegardez manuellement avant gros changements
+  </Accordion>
+  
+  <Accordion title="Collaboration" icon="users">
+    - L'historique montre qui a fait quoi
+    - Communiquez avant d'annuler le travail d'autrui
+    - Utilisez les commentaires pour documenter
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,225 @@
+---
+title: "Permissions et Partage"
+description: "Gérer l'accès et collaborer sur vos projets"
+icon: "user-lock"
+---
+
+## Système de Permissions
+
+KORE utilise un système de rôles pour contrôler l'accès aux projets.
+
+### Rôles Disponibles
+
+<Tabs>
+  <Tab title="Administrateur">
+    **Accès complet**
+    
+    - Modifier tous les paramètres du projet
+    - Ajouter/supprimer des danseurs
+    - Créer/modifier/supprimer des scènes
+    - Gérer les permissions
+    - Supprimer le projet
+    
+    <Info>
+      Le créateur du projet est automatiquement administrateur.
+    </Info>
+  </Tab>
+  
+  <Tab title="Éditeur">
+    **Modification du contenu**
+    
+    - Ajouter/modifier des danseurs
+    - Créer/modifier des scènes
+    - Placer des danseurs sur scène
+    - Créer des groupes de placement
+    - ❌ Ne peut pas modifier les paramètres du projet
+    - ❌ Ne peut pas gérer les permissions
+  </Tab>
+  
+  <Tab title="Lecteur">
+    **Consultation uniquement**
+    
+    - Voir le projet et toutes les scènes
+    - Naviguer dans la timeline
+    - Exporter des vues
+    - ❌ Ne peut rien modifier
+  </Tab>
+</Tabs>
+
+## Partager un Projet
+
+### Inviter des Collaborateurs
+
+<Steps>
+  <Step title="Accéder au partage">
+    Cliquez sur le bouton **Partager** (icône utilisateur avec +) dans la barre d'outils
+  </Step>
+  
+  <Step title="Ajouter un utilisateur">
+    1. Entrez l'adresse email du collaborateur
+    2. Sélectionnez le rôle à attribuer
+    3. (Optionnel) Ajoutez un message personnel
+  </Step>
+  
+  <Step title="Envoyer l'invitation">
+    Cliquez sur **Inviter**. Un email est envoyé au collaborateur.
+  </Step>
+</Steps>
+
+<Tip>
+  Le collaborateur doit avoir un compte KORE pour accéder au projet. S'il n'en a pas, il sera invité à en créer un.
+</Tip>
+
+### Gérer les Collaborateurs
+
+Dans le panneau de partage, vous pouvez :
+
+| Action | Description |
+|--------|-------------|
+| **Modifier le rôle** | Changer les permissions d'un utilisateur |
+| **Retirer l'accès** | Supprimer un collaborateur du projet |
+| **Renvoyer l'invitation** | Si l'email n'a pas été reçu |
+
+## Cas d'Usage
+
+### Équipe de Chorégraphie
+
+<AccordionGroup>
+  <Accordion title="Chorégraphe Principal" icon="crown">
+    - Rôle : **Administrateur**
+    - Contrôle total sur le projet
+    - Gère les permissions de l'équipe
+  </Accordion>
+  
+  <Accordion title="Assistant Chorégraphe" icon="user-tie">
+    - Rôle : **Éditeur**
+    - Peut modifier les placements et scènes
+    - Ne peut pas supprimer le projet
+  </Accordion>
+  
+  <Accordion title="Danseurs" icon="user">
+    - Rôle : **Lecteur**
+    - Consultent leurs placements
+    - Peuvent exporter pour référence
+  </Accordion>
+  
+  <Accordion title="Directeur Artistique" icon="eye">
+    - Rôle : **Lecteur** ou **Éditeur**
+    - Selon le niveau d'implication
+    - Peut valider les formations
+  </Accordion>
+</AccordionGroup>
+
+### Compagnie de Danse
+
+Pour une compagnie avec plusieurs spectacles :
+
+1. **Directeur Artistique** : Administrateur sur tous les projets
+2. **Chorégraphes** : Administrateurs sur leurs projets respectifs
+3. **Régisseur** : Éditeur sur tous les projets
+4. **Danseurs** : Lecteurs sur les projets les concernant
+
+## Sécurité et Confidentialité
+
+### Bonnes Pratiques
+
+<Warning>
+  Ne partagez jamais vos identifiants de connexion. Utilisez toujours le système d'invitation pour donner accès.
+</Warning>
+
+<Tabs>
+  <Tab title="Principe du Moindre Privilège">
+    Accordez uniquement les permissions nécessaires :
+    - Lecteur par défaut
+    - Éditeur si modification requise
+    - Administrateur uniquement pour les personnes de confiance
+  </Tab>
+  
+  <Tab title="Révision Régulière">
+    Vérifiez périodiquement :
+    - Qui a accès à vos projets
+    - Si les permissions sont toujours appropriées
+    - Retirez l'accès aux anciens collaborateurs
+  </Tab>
+  
+  <Tab title="Projets Sensibles">
+    Pour les spectacles confidentiels :
+    - Limitez le nombre de collaborateurs
+    - Utilisez des rôles Lecteur quand possible
+    - Communiquez les règles de confidentialité
+  </Tab>
+</Tabs>
+
+### Audit des Accès
+
+Les administrateurs peuvent consulter :
+
+- Liste de tous les collaborateurs
+- Rôle de chaque utilisateur
+- Date de dernière connexion
+- Historique des modifications (qui a fait quoi)
+
+## Transfert de Propriété
+
+### Transférer un Projet
+
+Si vous souhaitez transférer la propriété d'un projet :
+
+<Steps>
+  <Step title="Conditions">
+    - Vous devez être administrateur
+    - Le destinataire doit déjà être collaborateur
+  </Step>
+  
+  <Step title="Procédure">
+    1. Accédez aux paramètres du projet
+    2. Section **Propriété**
+    3. Sélectionnez le nouveau propriétaire
+    4. Confirmez le transfert
+  </Step>
+  
+  <Step title="Après le transfert">
+    - Le nouveau propriétaire devient administrateur
+    - Vous conservez vos permissions actuelles
+    - Le nouveau propriétaire peut modifier vos permissions
+  </Step>
+</Steps>
+
+<Warning>
+  Le transfert de propriété est irréversible. Assurez-vous de faire confiance au destinataire.
+</Warning>
+
+## Liens de Partage
+
+### Partage Public (Bientôt Disponible)
+
+<Info>
+  La fonctionnalité de liens de partage public est en développement et sera disponible prochainement.
+</Info>
+
+Fonctionnalités prévues :
+
+- Génération de liens publics en lecture seule
+- Liens avec expiration automatique
+- Protection par mot de passe optionnelle
+- Statistiques de consultation
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Combien de collaborateurs puis-je inviter ?" icon="users">
+    Il n'y a pas de limite au nombre de collaborateurs par projet.
+  </Accordion>
+  
+  <Accordion title="Les collaborateurs peuvent-ils inviter d'autres personnes ?" icon="user-plus">
+    Seuls les administrateurs peuvent inviter de nouveaux collaborateurs.
+  </Accordion>
+  
+  <Accordion title="Que se passe-t-il si je supprime un collaborateur ?" icon="user-minus">
+    Le collaborateur perd immédiatement l'accès au projet. Ses modifications précédentes sont conservées.
+  </Accordion>
+  
+  <Accordion title="Puis-je voir qui a modifié quoi ?" icon="clock">
+    Oui, l'historique des modifications indique l'auteur de chaque changement.
+  </Accordion>
+</AccordionGroup>

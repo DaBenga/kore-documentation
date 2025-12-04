@@ -1,0 +1,242 @@
+---
+title: "Groupes de Placement"
+description: "Organiser vos chorégraphies dans le temps"
+icon: "layer-group"
+---
+
+## Qu'est-ce qu'un Groupe de Placement ?
+
+Un groupe de placement représente une formation ou position spécifique à un moment donné :
+- Capture les positions de tous les danseurs sur scène
+- Possède un moment de début et une durée
+- S'affiche sur la timeline
+- Permet de naviguer entre les formations
+
+## Créer un Groupe de Placement
+
+<Steps>
+  <Step title="Placer les danseurs">
+    Positionnez vos danseurs sur la scène comme souhaité
+  </Step>
+  
+  <Step title="Ouvrir la timeline">
+    Cliquez sur l'onglet **Timeline** en bas de l'écran
+  </Step>
+  
+  <Step title="Positionner le playhead">
+    Cliquez sur la timeline au moment où cette formation doit apparaître
+  </Step>
+  
+  <Step title="Créer le groupe">
+    Cliquez sur **+ Nouveau Groupe** ou `Ctrl/Cmd + N`
+  </Step>
+  
+  <Step title="Nommer">
+    Donnez un nom descriptif (ex: "Formation 1", "Entrée", "Finale")
+  </Step>
+  
+  <Step title="Définir la durée">
+    Ajustez la durée du groupe en secondes
+  </Step>
+</Steps>
+
+## Propriétés d'un Groupe
+
+| Propriété | Description |
+|-----------|-------------|
+| **Nom** | Titre du groupe |
+| **Début** | Moment de début (en secondes) |
+| **Durée** | Durée du groupe |
+| **Positions** | Placements des danseurs |
+| **Ordre** | Séquence dans la timeline |
+
+## Naviguer entre les Groupes
+
+### Méthodes de Navigation
+
+<Tabs>
+  <Tab title="Clic Direct">
+    Cliquez sur un groupe dans la timeline pour l'afficher
+  </Tab>
+  
+  <Tab title="Boutons de Navigation">
+    - **Précédent** : `←` ou bouton
+    - **Suivant** : `→` ou bouton
+  </Tab>
+  
+  <Tab title="Playhead">
+    Déplacez le playhead sur la timeline
+  </Tab>
+  
+  <Tab title="Lecture">
+    Lancez la lecture pour voir les transitions
+  </Tab>
+</Tabs>
+
+## Modifier un Groupe
+
+### Changer les Positions
+
+1. Naviguez vers le groupe
+2. Modifiez les positions des danseurs
+3. Les changements sont sauvegardés automatiquement
+
+### Modifier les Propriétés
+
+Pour changer le nom, le début ou la durée :
+1. Cliquez sur le groupe
+2. Éditez les propriétés dans le panneau
+3. Ou double-cliquez pour édition rapide
+
+## Déplacer un Groupe
+
+### Sur la Timeline
+
+- **Glisser-déposer** : Déplacez le groupe horizontalement
+- **Snap** : S'accroche aux autres groupes
+- **Contraintes** : Ne peut pas chevaucher d'autres groupes
+
+<Tip>
+  Maintenez `Shift` en glissant pour désactiver temporairement le snap.
+</Tip>
+
+## Redimensionner un Groupe
+
+### Ajuster la Durée
+
+- **Bords du groupe** : Glissez les bords pour ajuster
+- **Durée minimale** : 1 seconde
+- **Durée maximale** : Jusqu'au groupe suivant
+
+## Dupliquer un Groupe
+
+Pour créer une copie :
+
+<Steps>
+  <Step title="Sélectionner">
+    Cliquez sur le groupe à dupliquer
+  </Step>
+  
+  <Step title="Dupliquer">
+    - Menu (⋮) > **Dupliquer**
+    - Ou `Ctrl/Cmd + D`
+  </Step>
+  
+  <Step title="Positionner">
+    Le nouveau groupe apparaît après l'original
+  </Step>
+</Steps>
+
+<Info>
+  La duplication copie toutes les positions des danseurs. Utile pour créer des variations.
+</Info>
+
+## Supprimer un Groupe
+
+<Warning>
+  La suppression d'un groupe est irréversible. Les positions des danseurs seront perdues.
+</Warning>
+
+Pour supprimer :
+1. Sélectionnez le groupe
+2. Appuyez sur `Suppr` ou menu > **Supprimer**
+3. Confirmez la suppression
+
+## Organisation
+
+### Ordre Séquentiel
+
+Les groupes sont organisés chronologiquement :
+- Du début à la fin de la scène
+- Ordre automatique selon le temps de début
+- Réorganisable par glisser-déposer
+
+### Nommage Recommandé
+
+<AccordionGroup>
+  <Accordion title="Par Numéro" icon="list-ol">
+    - Formation 1, Formation 2, Formation 3
+    - Simple et clair
+  </Accordion>
+  
+  <Accordion title="Descriptif" icon="tag">
+    - Entrée, Développement, Climax, Sortie
+    - Indique le rôle dans la chorégraphie
+  </Accordion>
+  
+  <Accordion title="Timing Musical" icon="music">
+    - Intro, Couplet 1, Refrain, Bridge
+    - Synchronisé avec la musique
+  </Accordion>
+  
+  <Accordion title="Mixte" icon="layer-group">
+    - F1 - Entrée, F2 - Cercle, F3 - Ligne
+    - Numéro + description
+  </Accordion>
+</AccordionGroup>
+
+## Transitions
+
+### Visualiser les Transitions
+
+Entre deux groupes, KORE peut afficher :
+- **Trajectoires** : Chemins des danseurs
+- **Durée de transition** : Temps disponible
+- **Conflits** : Collisions potentielles
+
+### Optimiser les Transitions
+
+<Tabs>
+  <Tab title="Durée Suffisante">
+    Assurez-vous que les danseurs ont le temps de se déplacer
+  </Tab>
+  
+  <Tab title="Chemins Clairs">
+    Évitez les croisements complexes
+  </Tab>
+  
+  <Tab title="Groupes Intermédiaires">
+    Ajoutez des groupes de transition si nécessaire
+  </Tab>
+</Tabs>
+
+## Vue Liste (Mobile)
+
+Sur mobile, une vue liste alternative affiche :
+- Tous les groupes verticalement
+- Informations détaillées
+- Actions rapides (éditer, dupliquer, supprimer)
+
+## Conseils
+
+<AccordionGroup>
+  <Accordion title="Planification" icon="calendar">
+    - Créez d'abord les formations clés
+    - Ajoutez ensuite les transitions
+    - Testez la fluidité
+  </Accordion>
+  
+  <Accordion title="Synchronisation" icon="clock">
+    - Alignez avec la musique
+    - Utilisez les marqueurs musicaux
+    - Testez avec la lecture
+  </Accordion>
+  
+  <Accordion title="Organisation" icon="folder-tree">
+    - Nommez clairement chaque groupe
+    - Limitez la durée des groupes
+    - Documentez les intentions
+  </Accordion>
+</AccordionGroup>
+
+## Prochaines Étapes
+
+<CardGroup cols={2}>
+  <Card title="Contrôles Timeline" icon="sliders" href="/timeline/timeline-controls">
+    Navigation et lecture
+  </Card>
+  
+  <Card title="Édition Timeline" icon="pen" href="/timeline/editing">
+    Techniques d'édition avancées
+  </Card>
+</CardGroup>
