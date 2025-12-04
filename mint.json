@@ -19,23 +19,23 @@
     "topbarLinks": [
         {
             "name": "Connexion",
-            "url": "https://kore.app"
+            "url": "https://kore.la-maam.com"
         }
     ],
     "topbarCtaButton": {
         "type": "link",
         "name": "Commencer",
-        "url": "https://kore.app"
+        "url": "https://kore.la-maam.com"
     },
     "anchors": [
         {
             "name": "Application",
-            "url": "https://kore.app",
+            "url": "https://kore.la-maam.com",
             "icon": "play"
         },
         {
             "name": "Support",
-            "url": "mailto:support@kore.app",
+            "url": "mailto:benjamin@enmouvance.com",
             "icon": "envelope"
         }
     ],
