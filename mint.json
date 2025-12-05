@@ -13,8 +13,8 @@
     },
     "favicon": "/favicon.svg",
     "logo": {
-        "light": "/logo/kore_logo_light.png",
-        "dark": "/logo/kore_logo_dark.png"
+        "light": "/logo/KORE_logo_daek.png",
+        "dark": "/logo/KORE_logo_dark.png"
     },
     "topbarLinks": [
         {
