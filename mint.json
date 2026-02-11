@@ -1,6 +1,6 @@
 {
     "$schema": "https://mintlify.com/schema.json",
-    "name": "KORE Documentation",
+    "name": "Koré",
     "theme": "quill",
     "colors": {
         "primary": "#8B5CF6",
@@ -11,26 +11,26 @@
             "dark": "#0F172A"
         }
     },
-    "favicon": "/favicon.svg",
+    "favicon": "/favicon.png",
     "logo": {
-        "light": "/logo/KORE_logo_daek.png",
-        "dark": "/logo/KORE_logo_dark.png"
+        "light": "/logo/logo-light.png",
+        "dark": "/logo/logo-dark.png"
     },
     "topbarLinks": [
         {
             "name": "Connexion",
-            "url": "https://kore.la-maam.com"
+            "url": "https://kore-app.la-maam.com"
         }
     ],
     "topbarCtaButton": {
         "type": "link",
-        "name": "Commencer",
-        "url": "https://kore.la-maam.com"
+        "name": "Ouvrir l'application",
+        "url": "https://kore-app.la-maam.com"
     },
     "anchors": [
         {
             "name": "Application",
-            "url": "https://kore.la-maam.com",
+            "url": "https://kore-app.la-maam.com",
             "icon": "play"
         },
         {
@@ -41,80 +41,48 @@
     ],
     "navigation": [
         {
-            "group": "Démarrage",
+            "group": "Introduction",
             "pages": [
-                "index",
-                "getting-started/quickstart",
-                "getting-started/interface-overview"
+                "index"
             ]
         },
         {
-            "group": "Projets",
+            "group": "Production",
             "pages": [
-                "projects/create-project",
-                "projects/project-settings",
-                "projects/permissions"
+                {
+                    "group": "Planification",
+                    "pages": [
+                        "production/planning/general",
+                        "production/planning/cast-scenes",
+                        "production/planning/schedule",
+                        "production/planning/transitions"
+                    ]
+                },
+                "production/artistic",
+                "production/show-control",
+                "production/exports"
             ]
         },
         {
-            "group": "Danseurs",
+            "group": "Éditeur",
             "pages": [
-                "dancers/add-dancers",
-                "dancers/manage-dancers",
-                "dancers/scene-cast"
-            ]
-        },
-        {
-            "group": "Scènes",
-            "pages": [
-                "scenes/create-scenes",
-                "scenes/manage-scenes",
-                "scenes/audio"
-            ]
-        },
-        {
-            "group": "Scène (Stage)",
-            "pages": [
-                "stage/placing-dancers",
-                "stage/stage-controls",
-                "stage/markers",
-                "stage/drapery"
-            ]
-        },
-        {
-            "group": "Timeline",
-            "pages": [
-                "timeline/placement-groups",
-                "timeline/timeline-controls",
-                "timeline/editing"
-            ]
-        },
-        {
-            "group": "Fonctionnalités Avancées",
-            "pages": [
-                "advanced/history",
-                "advanced/import-export",
-                "advanced/keyboard-shortcuts"
-            ]
-        },
-        {
-            "group": "Support Mobile",
-            "pages": [
-                "mobile/overview",
-                "mobile/gestures",
-                "mobile/mobile-controls"
+                "editor/stage",
+                "editor/drapery",
+                "editor/markers",
+                "editor/props",
+                "editor/notes",
+                "editor/timeline"
             ]
         },
         {
             "group": "Ressources",
             "pages": [
                 "resources/faq",
-                "resources/troubleshooting",
                 "resources/support"
             ]
         }
     ],
     "footerSocials": {
-        "github": "https://github.com/DaBenga/show-time"
+        "instagram": "https://instagram.com/kore_danceshow_app"
     }
 }
