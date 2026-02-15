@@ -19,18 +19,18 @@
     "topbarLinks": [
         {
             "name": "Connexion",
-            "url": "https://kore-app.la-maam.com"
+            "url": "https://kore-app.com"
         }
     ],
     "topbarCtaButton": {
         "type": "link",
         "name": "Ouvrir l'application",
-        "url": "https://kore-app.la-maam.com"
+        "url": "https://kore-app.com"
     },
     "anchors": [
         {
             "name": "Application",
-            "url": "https://kore-app.la-maam.com",
+            "url": "https://kore-app.com",
             "icon": "play"
         },
         {
