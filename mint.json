@@ -68,6 +68,7 @@
             "pages": [
                 "editor/stage",
                 "editor/drapery",
+                "editor/grill",
                 "editor/markers",
                 "editor/props",
                 "editor/notes",
